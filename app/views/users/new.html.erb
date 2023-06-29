@@ -1,0 +1,21 @@
+<h1>Register Yourself</h1>
+
+
+<h1>Hello Users</h1>
+<%=form_with model: @user do |u|%>
+  <div>
+    <%= u.label :Name%>
+    <%= u.text_field :name%>
+  </div>
+
+  <div>
+    <%= u.label :Password%>
+    <%= u.text_field :password%>
+  </div>
+
+  <div>
+    <%= u.submit %>
+  </div>
+
+<%end%>
+
